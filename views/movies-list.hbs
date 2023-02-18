@@ -1,0 +1,16 @@
+<h1>Ironhack Cinema</h1>
+<p>Click on the movie to check the showtimes!</p>
+<div class="movies-list">
+  {{#each movies}}
+    <div class="movies">
+      <img class="poster" src="{{this.image}}" >
+      <h3>{{this.title}}</h3>
+      <a class="see-more" href="/movies/{{_id}}">See more</a>
+    </div>
+  {{/each}}
+</div>
+
+ 
+{{!-- since we passed allTheBooksFromDB as `books`,
+we can iterate over it here with #each--}}
+ 
